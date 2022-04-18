@@ -1,2 +1,2 @@
 # Elite
-Open ended interactive film using SFML library.
+Open ended interactive film using SFML (Simple and Fast Multimedia Library) library.
