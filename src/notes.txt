@@ -1,0 +1,8 @@
+Standard Template Iterators
+//std::list<Tether*>::iterator itTether = std::list<Tether*>::iterator();
+//https://stackoverflow.com/questions/22269435/how-to-iterate-through-a-list-of-objects-in-c
+
+Observer pattern
+//https://www.codeproject.com/Articles/3267/Implementing-a-Subject-Observer-Pattern-with-Templ
+
+
