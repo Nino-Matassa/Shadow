@@ -9,9 +9,7 @@ namespace EliteShadow {
     class Satellite : public Tether {
         public:
             virtual ~Satellite() {}
-            void update(Tether* pObservable){
-                pObservable->getState();
-            }
+            void update(Tether* pObservable);
     };
 }
 

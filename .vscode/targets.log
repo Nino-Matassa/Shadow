@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  2 06:43:04 2022
+# Make data base, printed on Fri Jun  3 07:23:11 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ SNAP_DATA = /var/snap/code/97
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:44790
+JOURNAL_STREAM = 8:45654
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,7 +79,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/97/usr/share/code/code
 # environment
-MANAGERPID = 1138
+MANAGERPID = 1143
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +95,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/nino-huawei:@/tmp/.ICE-unix/1497,unix/nino-huawei:/tmp/.ICE-unix/1497
+SESSION_MANAGER = local/nino-huawei:@/tmp/.ICE-unix/1881,unix/nino-huawei:/tmp/.ICE-unix/1881
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -113,7 +113,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = e3b4b30184b84be48c4293bbc9d1e8e9
+INVOCATION_ID = 37ee3dacb21a4e39a23944ec50455b29
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # makefile (from 'Makefile', line 7)
@@ -127,7 +127,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5233
+GIO_LAUNCHED_DESKTOP_FILE_PID = 10281
 # automatic
 %F = $(notdir $%)
 # environment
@@ -141,7 +141,7 @@ PWD = /home/nino/Development/Elite
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1422
+SSH_AGENT_PID = 1792
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -195,7 +195,7 @@ CXX_FLAGS := -Wall -Wextra -std=c++17 -ggdb
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c4966246-103a-4c21-830c-997f7bca3065.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-620aa409-5797-4572-8ec0-d64bbefd33f2.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -288,7 +288,7 @@ LC_ADDRESS = en_IE.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 5281
+VSCODE_PID = 10329
 # variable set hash-table stats:
 # Load=139/1024=14%, Rehash=0, Collisions=27/169=16%
 
@@ -299,15 +299,22 @@ VSCODE_PID = 5281
 # Directories
 
 # . (device 66312, inode 7865413): 12 files, no impossibilities.
-# src (device 66312, inode 7865546): 10 files, no impossibilities.
+# src (device 66312, inode 7865546): 11 files, no impossibilities.
 
-# 22 files, no impossibilities in 2 directories.
+# 23 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
+
+# Not a target:
+src/satellite.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-02 07:48:06.767555557
+#  File has been updated.
+#  Successfully updated.
 
 all: bin/elite
 #  Command line target.
@@ -332,7 +339,7 @@ Makefile:
 # Not a target:
 src/tether.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-31 08:56:15.923182426
+#  Last modified 2022-06-02 07:37:44.772924646
 #  File has been updated.
 #  Successfully updated.
 
@@ -354,32 +361,32 @@ clean:
 # Not a target:
 src/main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-01 21:21:46.678694684
+#  Last modified 2022-06-02 07:17:45.584863786
 #  File has been updated.
 #  Successfully updated.
 
-bin/elite: src/tether.cpp src/main.cpp
+bin/elite: src/satellite.cpp src/tether.cpp src/main.cpp
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-01 21:22:36.557861341
+#  Last modified 2022-06-02 07:48:14.051493478
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 20):
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/27=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 265 B / avg = 8 B
-# current buf: size = 8162 B / used = 265 B / count = 30 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 32 / storage = 297 B / avg = 9 B
+# current buf: size = 8162 B / used = 297 B / count = 32 / avg = 9 B
 
-# strcache performance: lookups = 45 / hit rate = 33%
+# strcache performance: lookups = 47 / hit rate = 31%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=2/45=4%
-# Finished Make data base on Thu Jun  2 06:43:04 2022
+# Load=32/8192=0%, Rehash=0, Collisions=2/47=4%
+# Finished Make data base on Fri Jun  3 07:23:11 2022
 
  

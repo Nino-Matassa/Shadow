@@ -1,5 +1,8 @@
 
-// #include "tether.h"
+#include "tether.h"
 
-// using namespace EliteShadow;
+using namespace EliteShadow;
 
+void Tether::getState() {
+    
+}

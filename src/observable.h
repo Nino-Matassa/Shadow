@@ -1,6 +1,7 @@
 #ifndef observable_h
 #define observable_h
 #include <vector>
+#include "observer.h"
 
 namespace EliteShadow {
     template <class T> class Observable {

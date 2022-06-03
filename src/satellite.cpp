@@ -1,4 +1,8 @@
-// #include "satellite.h"
+#include "satellite.h"
 
-// using namespace EliteShadow;
+using namespace EliteShadow;
+
+void Satellite::update(Tether* pObservable) {
+    pObservable->getState();
+}
 

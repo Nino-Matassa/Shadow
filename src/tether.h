@@ -9,7 +9,7 @@ namespace EliteShadow {
             public:
             virtual ~Tether(){}
             virtual void update(Tether* pObservable) = 0;
-            void getState(){}
+            void getState();
     };
 }
 
