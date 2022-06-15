@@ -11,17 +11,9 @@ namespace EliteShadow {
         public:
             Observable() {}
             virtual ~Observable() {}
-            void add(Observer<T> &observer) {
-                pObservers.push_back(&observer);
-            }
-            void remove(Observer<T> &observer) {
-                pObservers.pop_back(&observer);
-            }
-            void notify() {
-                for(auto& pObserver: pObservers) {
-                    pObserver->update(static_cast<T*> (this));
-                }
-            }
+            void add(Observer<T> &observer);
+            void remove(Observer<T> &observer);
+            void notify();
     };
 }
 #endif

@@ -16,13 +16,17 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!", sf::Style::Close | sf::Style::Resize);
     sf::CircleShape shape(100.f);
-    //sf::RectangleShape shape(sf::Vector2f(100.0f, 100.0f));
+    // sf::RectangleShape shape(sf::Vector2f(100.0f, 100.0f));
     { // test code
         string name = Constant::name;
         Satellite *pSatellite = new Satellite();
         pSatellite->getState();
+        delete pSatellite;
+        
         Satellite satellite;
         satellite.getState();
+        
+        cout << name << endl;
     }
     
         

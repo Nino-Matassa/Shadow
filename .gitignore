@@ -1,2 +1,6 @@
 bin/elite
-.vscode/*.log
+**/.vscode/*.log
+lib/*
+share/*
+include/*
+
