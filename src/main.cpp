@@ -10,7 +10,7 @@
 #include "satellite.h"
 
 using namespace std;
-using namespace EliteShadow;
+// using namespace EliteShadow;
 
 int main()
 {
@@ -19,12 +19,12 @@ int main()
     // sf::RectangleShape shape(sf::Vector2f(100.0f, 100.0f));
     { // test code
         string name = Constant::name;
-        Satellite *pSatellite = new Satellite();
-        pSatellite->getState();
-        delete pSatellite;
+        // Satellite *pSatellite = new Satellite();
+        // pSatellite->getState();
+        // delete pSatellite;
         
-        Satellite satellite;
-        satellite.getState();
+        // Satellite satellite;
+        // satellite.getState();
         
         cout << name << endl;
     }

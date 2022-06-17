@@ -1,6 +1,7 @@
-bin/elite
-**/.vscode/*.log
-lib/*
-share/*
-include/*
+./bin/*
+.vscode/*.log
+./main
+./include/*.*
+./lib/*.*
+
 

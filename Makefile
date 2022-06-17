@@ -7,7 +7,7 @@ INCLUDE	:= include
 LIB		:= lib
 
 LIBRARIES	:= -lsfml-graphics -lsfml-window -lsfml-system
-EXECUTABLE	:= elite
+EXECUTABLE	:= shadow
 
 
 all: $(BIN)/$(EXECUTABLE)

@@ -1,0 +1,14 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/nino/Development/Linux/Shadow/bin",
+            "binaryPath": "/home/nino/Development/Linux/Shadow/bin/elite",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/nino/Development/Linux/Shadow/bin",
+            "binaryPath": "/home/nino/Development/Linux/Shadow/bin/shadow",
+            "binaryArgs": []
+        }
+    ]
+}

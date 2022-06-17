@@ -6,7 +6,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/elite",
+            "program": "${workspaceFolder}/bin/shadow",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
