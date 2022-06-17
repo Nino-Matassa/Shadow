@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/nino/Development/Linux/Shadow'
-g++ -Wall -Wextra -std=c++17 -ggdb -Iinclude -Llib src/observable.cpp src/satellite.cpp src/tether.cpp src/main.cpp -o bin/elite -lsfml-graphics -lsfml-window -lsfml-system
-make: Leaving directory '/home/nino/Development/Linux/Shadow'
- 
