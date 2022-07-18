@@ -1,6 +1,10 @@
 #ifndef constant_h
 #define constant_h
-namespace Constant {
-    const char* const name = "Elite Shadow";
-}
+
+#include<string>
+
+class constant {
+    public:
+        static inline const std::string name = "shadow";
+};
 #endif
