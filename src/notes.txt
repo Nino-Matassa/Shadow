@@ -5,5 +5,11 @@ https://stackoverflow.com/questions/22269435/how-to-iterate-through-a-list-of-ob
 Observer pattern
 https://www.codeproject.com/Articles/3267/Implementing-a-Subject-Observer-Pattern-with-Templ
 
+Factory method
+https://www.geeksforgeeks.org/design-patterns-set-2-factory-method/
+
 Tutorial - game from scratch
 https://medium.com/achiev/game-from-scratch-with-c-and-sfml-1-f17dcc2b6092
+
+enum
+// https://www.geeksforgeeks.org/enumerated-types-or-enums-in-c/

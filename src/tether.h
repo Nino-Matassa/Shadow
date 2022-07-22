@@ -1,31 +1,29 @@
 #ifndef tether_h
 #define tether_h
-#include "vector"
+#include <vector>
+#include <string>
 namespace shadow {
 /*
-Tether is a derivitive of the observer design pattern, it both registers
-observers and can be registered as an observer. It can be viewed like a tree
-like structure: Root = a fixed point/mass in space around which satellites
-orbit. Branch = Both child of a parent and having >= 1 children. Leaf = Having a
-parent but no children.
+Tether is a derivitive of the Observer Design Pattern. It unifies both interfaces and privitises the update() call.
+It is both a node and tree structure; Root, Branch & Leaf.
+Root: Has no root node.
+Branch: Has a root >= 1 leaf node.
+Leaf: Has a root noda but no leaf nodes.
 */
 template <class T> class Tether {
    public:
     Tether() {}
     ~Tether() {}
-    void add(T& leaf) { pLeaves.push_back(&leaf); }
-    void remove(T& leaf) { pLeaves.pop_back(&leaf); }
+    void add(T& leaf) { pLeafs.push_back(&leaf); }
+    void remove(T& leaf) { pLeafs.pop_back(&leaf); }
     void notify() {
-        // typename std::vector<T*>::iterator it;
-        // for (it = pLeaves.begin(); it != pLeaves.end(); it++) {
-        //     (*it)->update(static_cast<T*>(this));
-        // }
-        for(auto* pLeave : pLeaves) {
-            pLeave->update(static_cast<T*>(this));
+        for(auto* pLeaf : pLeafs) {
+            pLeaf->update(static_cast<T*>(this));
         }
     }
    protected:
-    std::vector<T*> pLeaves;
+    std::vector<T*> pLeafs;
+    std::string state;
    private:
     virtual void update(T* pRoot) = 0;
 };
